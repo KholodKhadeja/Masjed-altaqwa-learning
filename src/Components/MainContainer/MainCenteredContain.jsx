@@ -45,7 +45,7 @@ const MainCenteredContain = () => {
          </iframe>
 
          <div className='d-flex flex-column'>
-            <a className='d-flex' href="">
+            <a className='d-flex' href="https://drive.google.com/file/d/1Jvi9hxvG2iSHKTjNc6UmZz2zFJPUfqpo/view?usp=share_link">
             <img src="https://raw.githubusercontent.com/KholodKhadeja/Masjed-altaqwa-learning/8c50e78b606104cada5e985a22d07b648b1bb8d2/src/images/Microsoft%20Word.svg"/>
             <p className=''>الدرس الأوّل - مقدمة في العقيدة والفقه - تلخيص</p></a>
 
