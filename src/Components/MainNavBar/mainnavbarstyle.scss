@@ -17,11 +17,17 @@
 #navbarSupportedContent{
      li{
         width:8em !important;
-        color: $primary-green !important;
+         
+        .nav-link{
+            color: $primary-green !important;
+        }
      }
 }
-
+ .active{
+   border-bottom: 1px solid $primary-green;
+ }
 .btn-login{
+    padding: 0.5em !important;
     background-color:  $primary-green !important;
     font-size: 1em !important;
 }

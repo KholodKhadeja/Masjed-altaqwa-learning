@@ -6,7 +6,8 @@ const MainNavBar = () => {
         <Fragment >
 <nav className="navbar navbar-expand-lg  navbarStyling">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#"><img className="logoImg"  src="https://raw.githubusercontent.com/KholodKhadeja/Masjed-altaqwa-learning/main/src/images/final-logo.ico?token=GHSAT0AAAAAAB44SBZ7XQ6D6VIEFGTOUBNAY6FWOXA"/></a>
+    <a className="navbar-brand" href="#"><img className="logoImg"  
+    src="https://raw.githubusercontent.com/KholodKhadeja/Masjed-altaqwa-learning/main/src/images/final-logo.ico?token=GHSAT0AAAAAAB44SBZ6HIVEMGVYIKFHQVCOY6FWSQQ"/></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
