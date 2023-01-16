@@ -1,10 +1,11 @@
-import logo from '../src/images/final-logo.png';
+
 import './App.scss';
+import MainNavBar from './Components/MainNavBar/MainNavBar';
 
 function App() {
   return (
-    <div className="App">
-       <h1>Hello World!!!!!</h1>
+    <div className="App container" dir="rtl">
+       <MainNavBar />
     </div>
   );
 }
