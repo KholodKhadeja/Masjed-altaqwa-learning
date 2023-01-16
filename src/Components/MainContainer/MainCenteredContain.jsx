@@ -39,13 +39,22 @@ const MainCenteredContain = () => {
      data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <div className='lesson-body-lesson'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jL2QeeOum2A" 
+        <iframe className='youtube-vid' src="https://www.youtube.com/embed/jL2QeeOum2A" 
          frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-         gyroscope; picture-in-picture; web-share"
-         allowfullscreen>
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media;gyroscope; picture-in-picture; web-share" allowfullscreen>
          </iframe>
 
+         <div className='d-flex flex-column'>
+            <a className='d-flex' href="">
+            <img src="https://raw.githubusercontent.com/KholodKhadeja/Masjed-altaqwa-learning/8c50e78b606104cada5e985a22d07b648b1bb8d2/src/images/Microsoft%20Word.svg"/>
+            <p className=''>الدرس الأوّل - مقدمة في العقيدة والفقه - تلخيص</p></a>
+
+          <div className='d-flex align-items-center'>
+            <img src="https://raw.githubusercontent.com/KholodKhadeja/Masjed-altaqwa-learning/8c50e78b606104cada5e985a22d07b648b1bb8d2/src/images/Voice.svg"/>
+            <p>ملف صوتي</p>
+            </div>
+
+         </div>
         </div>
       </div>
     </div>
