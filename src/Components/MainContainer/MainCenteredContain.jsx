@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import AccordionItemComponent from "../AccordionItem/AccordionItem.component";
 import "./maincontainer.scss";
 
 const MainCenteredContain = () => {
@@ -28,7 +29,8 @@ const MainCenteredContain = () => {
   tabindex="0">
     {/* **********************ACCORDION************************* */}
     <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
+            <AccordionItemComponent />
+  {/* <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
        aria-expanded="true" aria-controls="collapseOne">
@@ -43,66 +45,20 @@ const MainCenteredContain = () => {
          frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media;gyroscope; picture-in-picture; web-share" allowfullscreen>
          </iframe>
-
          <div className='d-flex flex-column'>
             <a className='d-flex' href="https://drive.google.com/file/d/1Jvi9hxvG2iSHKTjNc6UmZz2zFJPUfqpo/view?usp=share_link">
             <img src="https://raw.githubusercontent.com/KholodKhadeja/Masjed-altaqwa-learning/8c50e78b606104cada5e985a22d07b648b1bb8d2/src/images/Microsoft%20Word.svg"/>
             <p className=''>الدرس الأوّل - مقدمة في العقيدة والفقه - تلخيص</p></a>
-
           <div className='d-flex align-items-center'>
             <img src="https://raw.githubusercontent.com/KholodKhadeja/Masjed-altaqwa-learning/8c50e78b606104cada5e985a22d07b648b1bb8d2/src/images/Voice.svg"/>
             <p>ملف صوتي</p>
             </div>
-
          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        الدرس الثاني
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-       data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        الدرس الثالث
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" 
-    data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong>
-      </div>
-    </div>
-  </div>
+  </div> */}
 
-  {/* ********lesson element *********
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-       data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        الدرس الثالث
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" 
-    data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong>
-      </div>
-    </div>
-  </div>
-  ********************************* */}
 </div>
 {/* *******************************the end of the accordion ******************************** */}
   </div>
