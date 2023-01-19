@@ -1,18 +1,19 @@
 #!/usr/bin/env node
 
-/**
- * Module dependencies.
- */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 var app = require('../app');
-var debug = require('debug')('git:server');
+var debug = require('debug')('masjedeltaqwa-server:server');
 var http = require('http');
+const connectToDB = require("../model/connectToDB");
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '4000');
 app.set('port', port);
 
 /**
@@ -20,6 +21,16 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+
+connectToDB
+  .then(() => {
+    debug("connected to db");
+  })
+  .catch((err) => {
+    debug("fatal error");
+    debug(err);
+    process.exit(1);
+  });
 
 /**
  * Listen on provided port, on all network interfaces.
