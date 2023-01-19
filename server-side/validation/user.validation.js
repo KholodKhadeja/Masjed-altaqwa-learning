@@ -5,18 +5,20 @@ const ageNum = require("../enums/ageEnum");
 const newUserSchema = Joi.object({
     firstName:Joi.string().required().min(5).max(30).trim(),
     lastName:Joi.string().required().min(5).max(30).trim(),
-    userName:Joi.string().required().min(5).max(100).regex(/^[a-z0-9_-]{3,16}$/),
-    password:Joi.string().required().regex(/^[A-Za-z]\w{7,14}$/),
+    userName:Joi.string().required().min(5).max(100),
+    password:Joi.string().required(),
     age:Joi.string().valid(...ageNum),
+    isAdmin: Joi.boolean().required(),
 }); 
 
 const updateUserSchema = Joi.object({
     id:Joi.string().length(24).hex().required().trim().allow(""),
     firstName:Joi.string().required().min(5).max(30).trim(),
     lastName:Joi.string().required().min(5).max(30).trim(),
-    userName:Joi.string().required().min(5).max(100).regex(/^[a-z0-9_-]{3,16}$/),
-    password:Joi.string().required().regex(/^[A-Za-z]\w{7,14}$/),
+    userName:Joi.string().required().min(5).max(100),
+    password:Joi.string().required(),
     age:Joi.string().valid(...ageNum),
+    isAdmin:Joi.boolean().required(),
 })
 
 const deleteUserSchemaById = Joi.object({

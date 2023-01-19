@@ -1,5 +1,5 @@
 const validate = (schema, Inputs) =>{
-    return schema.validattAsync(Inputs,{
+    return schema.validateAsync(Inputs,{
         abortEarly:false
     })
 }; 
