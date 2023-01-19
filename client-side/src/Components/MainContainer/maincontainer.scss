@@ -27,12 +27,19 @@
 .accordion{
     margin: $margin-btm  auto !important;
     width: 95% !important;
-
-    .lesson-body-lesson{
-    }
+    border-bottom:  none !important;
 }
 
+.tab-content{
+    // border-bottom: none !important;
+    border: none !important;
+}
 .youtube-vid{
     width: 25em;
     height: 17em;
+}
+
+.shadow-lg{
+    border-bottom-right-radius: $border-radius-v !important;
+    border-bottom-left-radius: $border-radius-v !important;
 }
